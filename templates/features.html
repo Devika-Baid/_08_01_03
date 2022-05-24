@@ -7,21 +7,54 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/feature_style.css') }}"
     />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}"> -->
   </head>
   <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="/index">SQUARE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-md-auto gap-2">
+                  <li class="nav-item rounded">
+                      <a class="nav-link active" aria-current="page" href="/index">Home</a>
+                  </li>
+                  <li class="nav-item rounded">
+                      <a class="nav-link" href="/features">Features</a>
+                  </li>
+                  <li class="nav-item rounded">
+                      <a class="nav-link" href="/visualize">Visualization</a>
+                  </li>
+                  <li class="nav-item rounded">
+                      <a class="nav-link" href="/predict">Price prediction</a>
+                  </li>
+                  <li class="nav-item rounded">
+                      <a class="nav-link" href="/aboutus">About us</a>
+                  </li>
+
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <a href="#NumericAttributes">Numeric Attributes</a>  
+  <a href="#StringAttributes">String Attributes</a>  
+  <a href="#BooleanAttributes">Boolean Attributes</a>  
 <div>
   <a class="box">
-    <div class="content">
-      <h2>My Amazing Title</h2>
+    <div id="NumericAttributes">
+      <br>
+      <h1>Numeric Attributes</h1>
       <p class="description">
         Some description text here of the title that displays on hover
-        <span class="link">Click to read more >> </span>
       </p>
     </div>
   </a>
@@ -44,7 +77,8 @@
     {% endfor %}
   </div>
 </div>
-      
+  <br>
+  <br>    
 
       <!-- {% for n in o_dict %}
         <li>{{n}}</li>
@@ -55,15 +89,16 @@
         </ul>
         {% endfor %} -->
       <div>
-          <a class="box">
-            <div class="content">
-              <h2>My Amazing Title</h2>
-              <p class="description">
-                Some description text here of the title that displays on hover
-                <span class="link">Click to read more >> </span>
-              </p>
-            </div>
-          </a>
+  <a class="box">
+
+        <div id="StringAttributes">
+          <br>
+          <h1>String Attributes</h1>
+          <p class="description">
+            Some description text here of the title that displays on hover
+          </p>
+        </div>
+      </a>
           <br>
           <br>
         <h2>Accordion</h2>
@@ -99,11 +134,11 @@
       </script>
 <div>
     <a class="box">
-      <div class="content">
-        <h2>My Amazing Title</h2>
+      <div id="BooleanAttributes">
+        <br>
+        <h1>Boolean Attributes</h1>
         <p class="description">
           Some description text here of the title that displays on hover
-          <span class="link">Click to read more >> </span>
         </p>
       </div>
     </a>
@@ -119,11 +154,6 @@
       {% endfor %}
     </div>
 </div>
-
-
-<div class="container">
-    </div>
-    <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
-    <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
