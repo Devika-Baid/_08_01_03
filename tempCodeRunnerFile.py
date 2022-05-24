@@ -1,2 +1,6 @@
-Hill_Assist,Electronic_Stability_Program,
-        Rain_Sensing_Wipers,Leather_Wrapped_Steering,Automatic_Headlamps,Traction_Control
+lectronic_Stability_Program=bool(request.form["Electronic_Stability_Program"])
+        # Rain_Sensing_Wipers=bool(request.form["Rain_Sensing_Wipers"])
+        # Leather_Wrapped_Steering=bool(request.form["Leather_Wrapped_Steering"])
+        # Automatic_Headlamps=bool(request.form["Automatic_Headlamps"])
+        # Traction_Control=bool(request.form["Traction_Control"])
+        # Cruise_Control=bool(request.form["Cruise_Control"])
