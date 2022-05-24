@@ -28,7 +28,7 @@ app = Flask(__name__)
 
 
 @app.route("/features")
-def template_test():
+def features():
     return render_template('features.html', f_dict=df3,b_dict=b_dict, o_dict=o_dict)
 
 
