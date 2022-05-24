@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Template Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/feature_style.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+  </head>
+  <body>
+    
+<div>
+  <a class="box">
+    <div class="content">
+      <h2>My Amazing Title</h2>
+      <p class="description">
+        Some description text here of the title that displays on hover
+        <span class="link">Click to read more >> </span>
+      </p>
+    </div>
+  </a>
+  <br>
+  <br>
+  <div class="grid-wrapper">
+    {% for n in f_dict %}
+    <a class="box">
+      <div class="content">
+        <h2>{{n}}</h2>
+        <p class="description">
+          min:{{f_dict[n]['min']}}
+          <br />
+          max:{{f_dict[n]['max']}}
+          <br />
+          mean:{{f_dict[n]['mean']}}
+        </p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+      
+
+      <!-- {% for n in o_dict %}
+        <li>{{n}}</li>
+        <ul>
+          {% for i in o_dict[n] %}
+          <li>{{i}}</li>
+          {% endfor %}
+        </ul>
+        {% endfor %} -->
+      <div>
+          <a class="box">
+            <div class="content">
+              <h2>My Amazing Title</h2>
+              <p class="description">
+                Some description text here of the title that displays on hover
+                <span class="link">Click to read more >> </span>
+              </p>
+            </div>
+          </a>
+          <br>
+          <br>
+        <h2>Accordion</h2>
+        {% for n in o_dict %}
+        <button class="accordion">{{n}}</button>
+        <div class="panel">
+          <p>
+            <ul>
+              {% for i in o_dict[n] %}
+              <li>{{i}}</li>
+              {% endfor %}
+            </ul>
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
+<div>
+    <a class="box">
+      <div class="content">
+        <h2>My Amazing Title</h2>
+        <p class="description">
+          Some description text here of the title that displays on hover
+          <span class="link">Click to read more >> </span>
+        </p>
+      </div>
+    </a>
+    <br>
+    <br>
+    <div class="grid-wrapper">
+      {% for n in b_dict %}
+      <a class="bool_box">
+        <div class="bool_content">
+          <h2>{{n}}</h2>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+</div>
+
+
+<div class="container">
+    </div>
+    <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+    <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+  </body>
+</html>
