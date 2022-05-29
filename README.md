@@ -12,12 +12,14 @@ The deployed web app is live at
 
 The web app was built in Python using the following libraries:
 
-* flask
-* pandas
-* numpy
-* scikit-learn
-* pickle
-* add moreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+* Flask==2.1.2
+* matplotlib==3.5.2
+* numpy==1.22.4
+* pandas==1.4.2
+* pywaffle==0.6.4
+* scikit_learn==1.1.1
+* scipy==1.8.1
+* seaborn==0.11.2
 
 # Demo-Preview
 
@@ -48,6 +50,8 @@ To use this project, first clone the repo on your device using the command below
 ```git init```
 
 ```git clone https://github.com/navendu-pottekkat/nsfw-filter.git```
+
+
 
 
 # Development
