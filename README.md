@@ -20,6 +20,7 @@ The web app was built in Python using the following libraries:
 * scikit_learn==1.1.1
 * scipy==1.8.1
 * seaborn==0.11.2
+* sklearn==0.0
 
 # Demo-Preview
 
@@ -37,9 +38,6 @@ Here is a random GIF as a placeholder.
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Development](#development)
-- [License](#license)
 - [Footer](#footer)
 
 # Installation
@@ -49,21 +47,11 @@ To use this project, first clone the repo on your device using the command below
 
 ```git init```
 
-```git clone https://github.com/navendu-pottekkat/nsfw-filter.git```
-
-
-
-
-# Development
-[(Back to top)](#table-of-contents)
-
-Create a new python environment:``` python3 -m venv venv ```
-
-Activate the environment:``` . venv/bin/activate ```
+```git clone https://github.com/Devika-Baid/inde_car.git```
 
 Install python dependances:``` pip install -r requirements.txt ```
 
-Run react.js frontend: cd frontend, npm start
+Run:```python app.py```
 
 # Footer
 [(Back to top)](#table-of-contents)
